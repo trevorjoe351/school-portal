@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Resource" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "subject" TEXT NOT NULL,
+    "form" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
