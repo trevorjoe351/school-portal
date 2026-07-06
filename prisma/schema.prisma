@@ -9,9 +9,18 @@ datasource db {
 }
 
 model Resource {
-  id        Int      @id @default(autoincrement())
-  title     String
-  subject   String
-  form      String
-  createdAt DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+
+  title       String
+  description String?
+
+  subject     String
+  form        String
+
+  fileName    String
+  filePath    String
+  fileType    String
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
